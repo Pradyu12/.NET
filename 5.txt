@@ -1,0 +1,28 @@
+using System;
+
+namespace _5
+{
+    internal class Program
+    {
+        static void MyFunction()
+        {
+            Console.WriteLine("Hello, this is my subroutine function.");
+        }
+
+        static int Add(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        static void Main(string[] args)
+        {
+            MyFunction();
+            Console.WriteLine("Enter two numbers:");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int result = Add(num1, num2);
+            Console.WriteLine("The sum of {0} and {1} is {2}", num1, num2, result);
+            Console.ReadKey();
+        }
+    }
+}
