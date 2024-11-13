@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstA
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int lower, upper, i;
+            Console.WriteLine("Enter the lower limit:");
+            lower = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the upper limit:");
+            upper = int.Parse(Console.ReadLine());
+            Console.WriteLine("The even number between" + lower + "to" + upper + "are");
+            for (i = lower; i <= upper; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
