@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Second.net
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int m;
+            Console.WriteLine("Enter the Marks");
+            m = int.Parse(Console.ReadLine());
+            if (m > 35 && m < 50)
+                Console.WriteLine("Pass");
+            else if (m > 50 && m < 60)
+                Console.WriteLine("Second Class");
+            else if (m > 60 && m < 75)
+                Console.WriteLine("First Class");
+            else if (m > 75 && m <= 100)
+                Console.WriteLine("Distinction");
+            else
+                Console.WriteLine("Fail");
+                Console.ReadLine();
+        }
+    }
+}
