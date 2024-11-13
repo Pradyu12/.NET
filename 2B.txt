@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2B
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int NUM1, NUM2, NUM3;
+            Console.WriteLine("Enter the number");
+            NUM1 = Convert.ToInt32(Console.ReadLine());
+            NUM2 = Convert.ToInt32(Console.ReadLine());
+            NUM3 = Convert.ToInt32(Console.ReadLine());
+            if ((NUM1 > NUM2) && (NUM2 > NUM3))
+            {
+                Console.WriteLine("NUM1 IS LARGEST" + NUM1);
+            }
+            else if (NUM2>NUM3)
+                {
+                Console.WriteLine("NUM2 is largest" + NUM2);
+                }
+            else
+            {
+                Console.WriteLine("NUM3 is largest" + NUM3);
+            }
+            Console.ReadLine();
+        }
+    }
+}
